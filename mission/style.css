@@ -2,7 +2,8 @@ div{
     border:1px solid;
     padding: 2rem;
     width: 600px;
-    background: #26a13b;
+    background: #ffffff;
+    margin: 0 auto;
 }
 .title{
     text-align:center;
@@ -11,8 +12,9 @@ div{
 
 h2{
     color: #006EB6;
-}
+}    
 #logo{
-    width: 50px;
+    width: 100px;
     height: auto;
+    display: block;
 }
