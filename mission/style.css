@@ -6,9 +6,12 @@ div{
 }
 .title{
     text-align:center;
-    border-bottom:groove;
+    border-bottom:solid;
 }
 
 h2{
     color: #006EB6;
+}
+img{
+    width:500px;height:500;
 }
