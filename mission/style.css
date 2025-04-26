@@ -13,6 +13,9 @@ div{
 h2{
     color: #006EB6;
 }    
+main{
+    font-size:20px;
+}
 .image{
     width: 130px;
     height: auto;
