@@ -1,3 +1,9 @@
+div{
+    border:1px solid;
+    padding: 2rem;
+    width: 600px;
+    background: #1c916a;
+}
 .title{
     text-align:center;
     border-bottom:groove;
