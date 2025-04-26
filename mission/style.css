@@ -15,14 +15,14 @@ h1{
 }
 h2{
     color: #006EB6;
-    font-size:18px;
+    font-size:15px;
 }    
 main{
     font-size:20px;
     line-height:2;
 }
 .image{
-    width: 130px;
+    width: 200px;
     height: auto;
     display: block;
 }
