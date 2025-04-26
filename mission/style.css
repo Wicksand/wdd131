@@ -10,7 +10,9 @@ div{
     border-bottom:solid #5a5a5a;
     letter-spacing:10px;
 }
-
+h1{
+    font-size:20;
+}
 h2{
     color: #006EB6;
     font-size:8;
