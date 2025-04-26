@@ -6,11 +6,13 @@ div{
 }
 .title{
     text-align:center;
-    border-bottom:solid;
+    border-bottom:solid #5a5a5a;
 }
 
 h2{
     color: #006EB6;
 }
 #logo{
+    width: 500px;
+    height: auto;
 }
