@@ -2,7 +2,7 @@ div{
     border:1px solid #545454;
     padding:50px;
     width: 90%;
-    max-width: 900px;
+    max-width: 800px;
     background: #fff;
     margin: 0 auto;
     line-height:1.5;
@@ -48,4 +48,5 @@ li{
     height: auto;
     display: block;
     margin: 0 auto;
+    border:solid;
 }
