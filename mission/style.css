@@ -30,5 +30,5 @@ main{
     width: 130px;
     height: auto;
     display: block;
-    justify-content: center;
+    text-align:center;
 }
