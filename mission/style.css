@@ -12,7 +12,7 @@ div{
     border-bottom:solid #5a5a5a;
     border-width:1px;
     width:80%;
-    max-width:500px;
+    max-width:600px;
     text-transform: uppercase;
 }
 h1{
@@ -30,11 +30,12 @@ main{
     margin:0 auto;
 }
 p{
-    max-width:500px;
+    max-width:550px;
+    margin: 0 auto;
 }
 ol{
     margin:20px;
-    max-width:500px;
+    max-width:550px;
 }
 li{
     margin-bottom:20px;
