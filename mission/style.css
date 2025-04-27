@@ -1,6 +1,6 @@
 div{
     border:1px solid #545454;
-    padding:30px;
+    padding:50px;
     width: 90%;
     max-width: 900px;
     background: #fff;
@@ -27,6 +27,7 @@ h2{
 }    
 main{
     font-size:20px;
+    margin:50px;
 }
 p{
     max-width:600;
@@ -35,7 +36,7 @@ ol{
     margin:20px;
 }
 .image{
-    width: 130px;
+    width: 150px;
     height: auto;
     display: block;
     margin: 0 auto;
