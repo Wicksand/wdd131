@@ -2,7 +2,7 @@ div{
     border:1px solid #545454;
     padding:30px;
     width: 90%;
-    max-width: 800px;
+    max-width: 900px;
     background: #fff;
     margin: 50 auto;
 }
@@ -11,7 +11,7 @@ div{
     margin: 0 auto;
     border-bottom:solid #5a5a5a;
     border-width:1px;
-    line-height:1.5;
+    line-height:1;
     width:80%;
     max-width:600px;
 }
@@ -25,6 +25,9 @@ h2{
 }    
 main{
     font-size:20px;
+}
+P{
+    margin:50px;
 }
 .image{
     width: 130px;
