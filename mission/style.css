@@ -13,6 +13,7 @@ div{
     border-width:1px;
     width:80%;
     max-width:600px;
+    text-transform: uppercase;
 }
 h1{
     font-size:40px;
