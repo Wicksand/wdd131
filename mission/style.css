@@ -10,7 +10,9 @@ div{
     text-align:center;
     border-bottom:solid #5a5a5a;
     letter-spacing:10px;
-    line-height:2;
+    line-height:1.75;
+    width:80%;
+    max-width:600;
 }
 h1{
     font-size:30px;
