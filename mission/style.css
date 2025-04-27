@@ -9,10 +9,11 @@ div{
 .title{
     text-align:center;
     border-bottom:solid #5a5a5a;
+    border-width:1px;
     letter-spacing:10px;
     line-height:1.75;
     width:80%;
-    max-width:600;
+    max-width:600px;
 }
 h1{
     font-size:30px;
