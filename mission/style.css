@@ -4,34 +4,35 @@ div{
     width: 90%;
     max-width: 900px;
     background: #fff;
-    margin: 50 auto;
+    margin: 0 auto;
 }
 .title{
     text-align:center;
     margin: 0 auto;
     border-bottom:solid #5a5a5a;
     border-width:1px;
-    line-height:1;
     width:80%;
     max-width:600px;
 }
 h1{
     font-size:40px;
+    line-height:1.5;
 }
 h2{
     color: #006EB6;
     font-size:15px;
     letter-spacing:7px;
+    line-height:.5;
 }    
 main{
     font-size:20px;
 }
 P{
-    margin:50px;
+    margin:20px;
 }
 .image{
     width: 130px;
     height: auto;
     display: block;
-    text-align:center;
+    margin: 0 auto;
 }
