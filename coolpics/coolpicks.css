@@ -83,6 +83,9 @@ a{
         max-width:1000px;
         margin: 0 auto;
     }
+    button{
+        display:none;
+    }
     .gallery{
         display:grid;
         grid-template-columns:1fr 1fr 1fr;
@@ -93,5 +96,10 @@ a{
     }
     a{
         display:inline;
+        margin-right: 50px;
+        margin-left:50px;
+    }
+    footer p{
+        margin-left:300px;
     }
 }
