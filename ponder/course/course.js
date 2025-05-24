@@ -132,8 +132,7 @@ students.forEach(function (item){
     name.setAttribute('class','format');
 
     let html = `
-        <p>${item.first}</p>
-        <p>${item.last}</p>
+        <p>${item.last}, ${item.first}</p>
         <hr>
     `
     name.innerHTML = html;

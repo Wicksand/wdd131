@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family:lora, serif
+}
+h1{
+    text-align: center;
+    padding:20px;
+}
+h3{
+    font-size:14px;
+}
+
+nav{
+    border: 1px solid #EFC69B ;
+}
+nav ul{
+    font-size: 20px;
+    text-align: center ;
+    list-style-type:none;
+}
+nav ul li{
+    padding:5px;
+}
+a{
+    color: #AF1B3F;
+    text-decoration:none;
+}
+main{
+    text-align: center;
+}
+h2{
+    color:#AF1B3F;
+    font-size:30px;
+}
+
+
+
+@media screen and (min-width: 900px){
+
+    nav ul{
+        display:grid;
+        grid-template-columns:75px 75px 75px;
+        justify-content:end;
+        max-width:800px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    #content{
+        display: grid;
+        grid-template-columns: 1fr 300px;
+    }
+    #book2{
+        margin: 30px;
+        display:grid;
+        grid-template-columns: 200px 1fr;
+    }
+    .col1{
+        border-right:1px solid #EFC69B ;
+        text-align: right;
+        padding:15px;
+    }
+    .col2{
+        text-align:left;
+        padding-left:30px;
+    }
+    .filter{
+        border:1px solid #EFC69B ;
+        padding:10px;
+        margin:10px;
+    }
+    #bookimg{
+        display: block;
+        margin: 0 auto;
+    }
+}
