@@ -1,14 +1,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-*{
-    font-family:lora, serif
-}
+
 h1{
     text-align: center;
     padding:20px;
+    font-family:lora, serif
+}
+h2{
+    font-family:lora, serif
 }
 h3{
     font-size:14px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav{
