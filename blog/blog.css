@@ -52,11 +52,12 @@ h2{
         
     }
 
-    #content{
+    #bigGrid{
         display: grid;
         grid-template-columns: 1fr 275px;
     }
-    #book2{
+    #book{
+        grid-column: 1;
         margin: 30px;
         display:grid;
         grid-template-columns: 200px 1fr;
