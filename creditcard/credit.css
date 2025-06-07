@@ -107,6 +107,9 @@ body{
     #cardF{
         margin-bottom:30px;
     }
+    #cardB{
+        min-height:215px;
+    }
     #submitbtn{
         margin-top: 15px;
         margin-left:80%;
