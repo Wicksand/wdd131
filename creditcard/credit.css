@@ -2,19 +2,74 @@
 body{
   font-family: lato, 'helvetica-light';
 }
-form{
-    max-width: 400px;
+#creditGrid{
+    max-width: 550px;
     margin:auto;
-    margin:auto;
+    margin-top:100px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr 1fr;
+    gap: 20px;
 }
 #cardF{
+    padding:30px;
+    z-index: 5;
+    grid-column: 1/3;
+    grid-row:1/3;
+    background-color: #498ee4;
     display: grid;
-    background-color: blue;
     grid-template-columns:1fr 1fr;
-
+    grid-template-rows:1fr 1fr 1fr;
+    box-shadow: 0 5px 5px rgb(63, 63, 63);
+    gap:15px;
+    border-radius:10px;
 }
+
+
 #cardB{
+    padding-top:20px;
+    padding-bottom:15px;
+    grid-column: 2/4;
+    grid-row:2/4;
     display:grid;
+    grid-template-columns:75% 1fr;
+    background-color: #498ee4;
+    border-radius:10px;
+}
+#stripe{
+    background-color: black;
+    grid-column:1/3;
+    height:40px;
+}
+#cardB label{
+    grid-column:2/3;
+    grid-row:2/3;
+    margin-top:65px;
+}
+#cardB input{
+    grid-column:2/3;
+    grid-row:2/3;
+    max-width: 80px;
+    max-height: 25px;
+    margin-top:85px;
+    
+}
+#submitbtn{
+    grid-column:3/4;
+    grid-row:4/5;
+    padding: 7px;
+    border-radius:10px;
+}
+@media screen and (max-width: 600px){
+    #creditGrid{
+        display:block;
+    }
+    #cardF{
+        margin-bottom:30px;
+    }
+    #submitbtn{
+        margin-top: 15px;
+        margin-left:80%;
+    }
+
 }
