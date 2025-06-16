@@ -32,8 +32,8 @@ const character = {
     healthBar.textContent = character.health;
 
    function UpdateStats(){
-    document.querySelector("#health").textContent = character.health;
-    document.querySelector("#level").textContent = character.level;
+      document.querySelector("#health").textContent = character.health;
+      document.querySelector("#level").textContent = character.level;
 
    }
 
