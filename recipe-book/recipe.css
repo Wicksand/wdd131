@@ -8,11 +8,66 @@
  --secondary-font: "Amatic SC";
  }
 
-header{
+ header{
+    border-bottom:.5px solid gray;
+ }
+ img{
+    max-width: 100%;
+ }
+#title{
     display: flex;
-    font-size: 20px;
-    font:var(--secondary-font);
+    justify-content:center;
+    padding-top:50px;
 }
-header img{
-    max-height: 100px;
+#title h1{
+    font-size: 70px;;
+    font-family:var(--secondary-font);
+}
+#title img{
+    max-height: 120px;
+}
+main{
+    margin-top: 20px;
+    font-family:var(--primary-font) ;
+}
+.searchBar{
+    display: flex;
+    justify-content: center;
+    border:1px solid rgb(0, 0, 0);
+    border-radius:5px;
+    width:90%;
+    margin-left:5%;
+    margin-bottom:20px;
+
+}
+#searchBtn img{
+    max-height:30px;
+    padding: 2.5px;
+
+}
+.searchBar input{
+    width:100%;
+}
+
+#recipe{
+    justify-content: center;
+    border:1px solid rgb(0, 0, 0);
+    border-radius:5px;
+    width:90%;
+    margin-left:5%;
+}
+#attribute_link{
+    font-size: 0.6em;
+}
+.social{
+    display: flex;
+
+}
+.social a{
+    height: 30px;
+    width:30px;
+}
+
+@media screen and (min-width: 700px){
+
 }

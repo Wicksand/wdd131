@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel = "stylesheet" href= "recipe.css">
     <link rel = "icon" href = "favicon.ico">
+    <script src= "recipe.js" defer></script>
 
     <meta property="og:title" content="Recipe Book">
     <meta property="og:type" content="website" />
@@ -21,14 +22,43 @@
 </head>
 <body>
     <header>
-        <img src = "recipe-book.png" alt="recipe book icon">
-        <h1>Recipe Book</h1>
+        <div id="title">
+            <img src = "recipe-book.png" alt="recipe book icon">
+            <h1>Recipe Book</h1>
+        </div>
+
+        <div class = "searchBar">
+            <input placeholder="Find a recipe">
+            <button id = "searchBtn"><img src="search.svg" alt="search icon"></button>
+        </div>
+
     </header>
     <main>
 
+        <section id = "recipe">
+            <span
+                class="rating"
+                role="img"
+                aria-label="Rating: 4 out of 5 stars"
+            >
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star-empty">⭐</span>
+                <span aria-hidden="true" class="icon-star-empty">☆</span>
+            </span>
+
+        </section>
     </main>
     <footer>
 
+        <a id = "attribute_link"  href="https://www.flaticon.com/free-icons/recipe"  title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img src="instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
     </footer>
 </body>
 </html>
