@@ -14,60 +14,147 @@
  img{
     max-width: 100%;
  }
+ button{
+    background: transparent;
+ }
 #title{
     display: flex;
     justify-content:center;
     padding-top:50px;
 }
 #title h1{
-    font-size: 70px;;
+    font-size: 60px;;
     font-family:var(--secondary-font);
 }
 #title img{
-    max-height: 120px;
+    max-height: 110px;
 }
 main{
     margin-top: 20px;
+    margin-bottom: 30px;
     font-family:var(--primary-font) ;
 }
 .searchBar{
     display: flex;
     justify-content: center;
-    border:1px solid rgb(0, 0, 0);
+    border: 0.2px solid black;
     border-radius:5px;
     width:90%;
     margin-left:5%;
     margin-bottom:20px;
+    padding:2px;
 
 }
 #searchBtn img{
     max-height:30px;
     padding: 2.5px;
-
+}
+#searchBtn{
+    border:none;
+    border-left: 0.2px solid black;
 }
 .searchBar input{
     width:100%;
+    font-family: var(--primary-font);
+    font-size: 20px;
+    border:none;
+    background-color: none;
 }
 
 #recipe{
+    display:flex;
+    flex-direction: column;
     justify-content: center;
     border:1px solid rgb(0, 0, 0);
     border-radius:5px;
-    width:90%;
+    max-width:90%;
     margin-left:5%;
+    margin-right:5%;
+    padding:20px;
+}
+#recipe h2{
+    font-family:var(--secondary-font);
+    color:var(--primary-color);
+    font-size: 45px;
+    margin-bottom:5px;
+    margin-top:5px;
+}
+.rating{
+    margin-bottom: 20px;
+}
+#dessertBtn{
+    padding:10px;
+    font-size: 20px;
+    max-width: 100px;
+    max-height:50px;
+    margin-top:10px;
+}
+#recipe p{
+    display:none;
 }
 #attribute_link{
     font-size: 0.6em;
+    margin:auto;
+    text-decoration: none;
+    color:var(--primary-color);
+}
+footer{
+    display:flex;
+    flex-direction: column-reverse;
 }
 .social{
     display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin:10px;
 
 }
 .social a{
-    height: 30px;
-    width:30px;
+    height: 60px;
+    width:60px;
 }
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 750px){
+    
+    #recipe{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:20px;
+        justify-content: left;
+    }
+    #recipe img{
+        max-width:300px;
+    }
+    #recipe p{
+    font-size: 20px;
+    display: block;
+    max-width: 300px;
+    }
+    footer{
+        flex-direction:row;
+        justify-content: space-between;
+        margin-right:5%;
+    }
+    #attribute_link{
+        text-align:left;
+        margin-left:5%;
+    }
+    #dessertBtn{
+    padding:5px 10px 5px 10px;
+    font-size: 20px;
+    max-width: 100px;
+    max-height:50px;
+    margin-top:10px;
+}
 
+}
+@media screen and (min-width: 1000px) {
+    #recipe img{
+        max-width:425px;
+    }
+    #recipe p{
+        font-size: 20px;
+        display: block;
+        max-width: 400px;
+    }
 }
