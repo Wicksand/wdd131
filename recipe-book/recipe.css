@@ -150,11 +150,23 @@ footer{
 }
 @media screen and (min-width: 1000px) {
     #recipe img{
-        max-width:425px;
+        max-width:350px;
+    }
+    .searchBar{
+        max-width: 835px;
+        margin: 0 auto 20px;
+    }
+    #recipe{
+        max-width:800px;
+        margin: 0 auto;
     }
     #recipe p{
         font-size: 20px;
         display: block;
         max-width: 400px;
+    }
+    footer{
+        max-width:800px;
+        margin: 0 auto;
     }
 }
