@@ -1,0 +1,5 @@
+.hike-card{
+    display:flex;
+    border: 2px solid black;
+    flex-direction: column;
+    margin:20px;

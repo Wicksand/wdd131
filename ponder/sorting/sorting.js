@@ -133,3 +133,54 @@ let sortedHikes = filteredHikes.sort(compareHikes);
 
 
 console.log(sortedHikes);
+
+
+let button = document.querySelector('button');
+
+button.addEventListener('click', search);
+
+let randomNum = Math.floor(Math.random() * hikes.length);
+console.log(randomNum);
+
+//-----------------------------------------
+function search() {
+  const input = document.querySelector('#searchInput').value.toLowerCase();
+  let filteredHikes = hikes.filter(hike => {
+    return (
+      hike.name.toLowerCase().includes(input) ||
+      hike.description.toLowerCase().includes(input) ||
+      hike.tags.some(tag => tag.toLowerCase().includes(input))
+    );
+  });
+
+  // Clear previous results
+  document.querySelector('#hike-container').innerHTML = "";
+
+  // Sort results (optional)
+  filteredHikes.sort(compareHikes);
+
+  // Render each result
+  filteredHikes.forEach(renderHike);
+}
+
+//-----------------------------------------
+function hikesTemplate(hike){
+  return `<div class= "hike-card">
+    <div class = "hike-content">
+      <h2>${hike.name}</h2>
+      <div class="hike-tags"></div>
+        <p>${hike.tags}</p>
+      </div>
+      <p>${hike.description}</p>
+    </div>
+  </div>`
+}
+
+
+function renderHike(hike){
+  let hikeContainer = document.querySelector('#hike-container')
+  let html = hikesTemplate(hike);
+  hikeContainer.innerHTML += html 
+}
+
+renderHike(hikes[randomNum])
