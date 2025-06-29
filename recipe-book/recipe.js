@@ -358,7 +358,8 @@ function filterRecipes(query){
 			return(
 			recipe.name.toLowerCase().includes(lowerQuery)||
 			recipe.description.toLowerCase().includes(lowerQuery) ||
-      		recipe.tags.some(tag => tag.toLowerCase().includes(lowerQuery))
+      		recipe.tags.some(tag => tag.toLowerCase().includes(lowerQuery))||
+			recipe.recipeIngredient.some(ingredient => ingredient.toLowerCase().includes(lowerQuery))
    			);
 		}).sort((a,b) => a.name.localeCompare(b.name));
 }
