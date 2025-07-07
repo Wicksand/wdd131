@@ -1,0 +1,22 @@
+ @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Lato&display=swap');
+ 
+ :root {
+    --primary-color: #7a9161;
+    --secondary-color:#8a8987;
+    --accent1-color: #c7ad8c;
+    --accent2-color: rgb(255, 255, 255);
+
+  --heading-font: 'Caveat', 'cursive';
+  --paragraph-font: 'Lato', Helvetica, sans-serif;
+ }
+
+ nav ul{
+    list-style: none;
+ }
+ nav ul a{
+    Text-decoration: none;
+    color: black;
+ }
+ h1{
+    font-family: var(--heading-font);
+ }
