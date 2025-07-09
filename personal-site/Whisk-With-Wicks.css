@@ -6,9 +6,10 @@
     --accent1-color: #c7ad8c;
     --accent2-color: rgb(255, 255, 255);
 
-  --heading-font: 'Caveat', 'cursive';
-  --paragraph-font: 'Lato', Helvetica, sans-serif;
+    --heading-font: 'Caveat', 'cursive';
+    --paragraph-font: 'Lato', Helvetica, sans-serif;
  }
+
 
  button{
     background: transparent;
@@ -22,13 +23,17 @@
     background-color: #7a9161;
     padding:15px;
     font-size: 20px;
+    border-bottom:5px solid var(--accent1-color);
  }
-
+ nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--secondary-color);
+}
  nav ul a{
     Text-decoration: none;
     color: black;
-    margin-right:15px;
     font-family: var(--paragraph-font);
+    text-align: center;
  }
  nav ul li{
     text-align:center;
@@ -36,7 +41,7 @@
  }
  h1{
     font-family: var(--heading-font);
-    Text-align:center;
+    text-align:center;
     font-size: 45px;
     margin-left: 10%;
     margin-right:10%;
@@ -69,13 +74,13 @@
     font-family: var(--primary-font);
     font-size: 20px;
     border:none;
-    background-color: none;
+    background-color: transparent;
 }
 
  #home{
     margin-left: 10%;
     margin-right:10%;
-    font-Size:20px;
+    font-size:20px;
     
  }
  #home p{
@@ -85,9 +90,91 @@
  p{
     font-family: var(--paragraph-font);
  }
+ .recipe{
+   display:grid;
+   grid-template-columns: 1fr;
+   width:84%;
+   margin-left:5%;
+   margin-right:5%;
+   margin-top:15px;
+   border-radius:30px;
+   border: 0.2px solid var(--accent1-color);
+   justify-items: center;
+   align-items: center;
+   padding:15px;
+
+ }
+ .name{
+   margin-bottom:0px;
+ }
+ .tags{
+   display: flex;
+   gap:30px;
+   margin:auto;
+   justify-content:center;
+ }
+ .Foodimg{
+   width: 70%;
+   border:solid black;
+   
+  
+   
+
+ }
+ .info{
+   display:flex;
+   margin: auto;
+   flex-direction: column;
+   width:95%;
+
+   
+ }
+ /*accordion*/
+ .accordion-header {
+  background-color: var(--primary-color);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 15px;
+  border: none;
+  outline: none;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  border:solid var(--accent1-color);
+  padding: 0 15px;
+  font-size: 20px;
+}
+.accordion-content button{
+   margin-top:10px;
+   border:none;
+   color:black;
+   
+}
+.accordion-content button:hover{
+   color:var(--accent1-color);
+}
+
+.accordion-content p {
+  margin: 15px 0;
+  padding-bottom: 15px;
+}
 
  @media screen and (min-width: 750px){
 
+    nav ul {
+        flex-direction:row;
+    }
+    nav ul a{
+        margin-left:25px;
+        
+    }
     header{
     max-width: 1000px;
     margin:auto;
@@ -101,10 +188,21 @@
     margin:auto; 
     width:100%;
     }
-     #home p{
+    #home p{
     text-indent: 2em;
     margin-left: 10%;
     margin-right:10%;
  }
-
+ .recipe{
+   max-width: 995px;
+   margin:15px auto; 
+   width:97%;
+   grid-template-columns: 1fr 2fr;
+ }
+ .Foodimg{
+   margin-left: 15px;
+   width: 100%;
+   max-width: 275px;
+   justify-self: start;
+ }
  }
