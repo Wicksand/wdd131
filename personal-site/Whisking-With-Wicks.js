@@ -119,7 +119,7 @@ function instructionsTemplate(instructions) {
 }
 
 //render -----------------------------
-const main = document.querySelector('main');
+const main = document.querySelector('#recipe-book');
 
 recipe.forEach(r => {
   main.innerHTML += recipeTemplate(r);});
