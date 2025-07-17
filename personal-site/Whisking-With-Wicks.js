@@ -196,6 +196,51 @@ const recipe = [
     "Return the pan to the oven and bake for about 20 minutes or until the peaks are puffed and golden brown.",
     "Remove from the oven, slice into large squares, and serve immediately while hot."
   ]
+},
+{
+  "tags": ["Bread", "Side Dish", "Cheesy"],
+  "image": "bread.png",
+  "imgName": "bread",
+  "ingredient": [
+    "1 Tbsp yeast",
+    "2 Tbsp sugar",
+    "1 tsp salt",
+    "½ cup warm water",
+    "3 cups flour",
+    "½ cup butter",
+    "Parmesan cheese (for topping)"
+  ],
+  "ingredientHalf": [
+    "½ Tbsp yeast",
+    "1 Tbsp sugar",
+    "½ tsp salt",
+    "¼ cup warm water",
+    "1½ cups flour",
+    "¼ cup butter",
+    "Parmesan cheese (for topping)"
+  ],
+  "ingredientDouble": [
+    "2 Tbsp yeast",
+    "4 Tbsp sugar",
+    "2 tsp salt",
+    "1 cup warm water",
+    "6 cups flour",
+    "1 cup butter",
+    "Parmesan cheese (for topping)"
+  ],
+  "name": "Mom’s Breadsticks",
+  "instructions": [
+    "Preheat your oven to 350°F (175°C).",
+    "Dissolve yeast, sugar, and salt in the warm water in a large mixing bowl.",
+    "Add the flour to form a dough, then let it rest for 10 minutes.",
+    "While waiting, place the butter on a cookie sheet and melt it in the oven as it preheats.",
+    "Roll out the dough and cut it into breadstick shapes.",
+    "Place the breadsticks into the melted butter on the pan with the sides touching.",
+    "Let the dough sit for another 15 minutes to rise slightly.",
+    "Sprinkle the tops with Parmesan cheese.",
+    "Bake for 20 minutes or until golden brown.",
+    "Serve warm and enjoy!"
+  ]
 }
 ]
 
