@@ -233,7 +233,7 @@ const recipe = [
     "Preheat your oven to 350°F (175°C).",
     "Dissolve yeast, sugar, and salt in the warm water in a large mixing bowl.",
     "Add the flour to form a dough, then let it rest for 10 minutes.",
-    "While waiting, place the butter on a cookie sheet and melt it in the oven as it preheats.",
+    "While waiting, place the butter on a baking sheet and melt it in the oven as it preheats.",
     "Roll out the dough and cut it into breadstick shapes.",
     "Place the breadsticks into the melted butter on the pan with the sides touching.",
     "Let the dough sit for another 15 minutes to rise slightly.",
