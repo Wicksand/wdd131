@@ -304,40 +304,46 @@ function instructionsTemplate(instructions) {
 const main = document.querySelector('#recipe-book');
 
 recipe.forEach((r, i) => {
-  main.innerHTML += recipeTemplate(r,i);});
-
-
-// accordion -------------------------
-
-const accordions = document.querySelectorAll('.accordion-header');
-
-accordions.forEach(accordion => {
-  accordion.addEventListener('click', () => {
-    accordion.classList.toggle('active');
-
-    const content = accordion.nextElementSibling;
-    if (content.style.maxHeight) {
-      content.style.maxHeight = null; // collapse
-    } else {
-      content.style.maxHeight = content.scrollHeight + 'px'; // expand
-    }
-  });
+  main.innerHTML += recipeTemplate(r,i);
 });
 
-//conversion buttions ---------------
-const book = document.querySelector('#recipe-book');
+attachButtons();
+attachAccordion();
 
-const halfButtons = book.querySelectorAll('.half-btn');
-const fullButtons = book.querySelectorAll('.full-btn');
-const doubleButtons = book.querySelectorAll('.double-btn');
+// accordion -------------------------
+function attachAccordion(){
+  const accordions = document.querySelectorAll('.accordion-header');
+
+  accordions.forEach(accordion => {
+    accordion.addEventListener('click', () => {
+      accordion.classList.toggle('active');
+
+      const content = accordion.nextElementSibling;
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null; // collapse
+      } else {
+        content.style.maxHeight = content.scrollHeight + 'px'; // expand
+      }
+    });
+  });
+}
+
+
+//conversion buttions ---------------
+
 
 function updateIngredients(button, scale){
   const index = button.getAttribute('data-index');
-  const recipeBlock = book.querySelectorAll('section.recipe');
-  const ul = recipeBlock[index].querySelector('.accordion-content ul');
+  const ul = button.closest('.accordion-content').querySelector('ul');
   
   ul.innerHTML =  recipe[index][scale].map(item => `<li>${item}</li>`).join('');
 }
+
+function attachButtons(){
+
+const halfButtons = main.querySelectorAll('.half-btn');
+const fullButtons = main.querySelectorAll('.full-btn');
+const doubleButtons = main.querySelectorAll('.double-btn');
 
 halfButtons.forEach(function(button) {
   button.addEventListener('click',function(event){
@@ -354,3 +360,51 @@ doubleButtons.forEach(function(button){
     updateIngredients(event.target, 'ingredientDouble');
   });
 });
+}
+
+// Filtering -------------------------------------
+const searchBtn = document.querySelector('#searchBtn');
+searchBtn.addEventListener('click', search);
+
+function filterRecipes(query) {
+  const lowerQuery = query.toLowerCase();
+  return recipe.filter(function(r) {
+    return (
+      r.name.toLowerCase().includes(lowerQuery) ||
+
+      r.instructions.some(function(step) {
+        return step.toLowerCase().includes(lowerQuery);
+      }) ||
+
+      r.tags.some(function(tag) {
+        return tag.toLowerCase().includes(lowerQuery);
+      }) ||
+
+      r.ingredient.some(function(ing) {
+        return ing.toLowerCase().includes(lowerQuery);
+      })
+    );
+  });
+}
+
+function search(){
+  const input = document.querySelector('#searchInput');
+  const query = input.value.trim();
+
+  const results = filterRecipes(query);
+  main.innerHTML = '';
+  results.forEach((r,i) => {
+    const ogindex = recipe.indexOf(r);
+    main.innerHTML += recipeTemplate(r,ogindex);
+    
+  });
+
+  attachAccordion();
+  attachButtons();
+  input.value = ''; // optional reset
+}
+
+const input = document.querySelector('#searchInput');
+input.addEventListener('keydown',function(event){
+  if(event.key === 'Enter'){search();}
+})

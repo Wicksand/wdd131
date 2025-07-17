@@ -72,6 +72,9 @@
     border:none;
     border-left: 0.2px solid black;
 }
+#searchBtn:hover{
+   background-color: #d7d7d7;
+}
 .searchBar input{
     width:100%;
     font-family: var(--primary-font);
