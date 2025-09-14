@@ -205,7 +205,7 @@ const recipe = [
     "1 Tbsp yeast",
     "2 Tbsp sugar",
     "1 tsp salt",
-    "½ cup warm water",
+    "1 ½ cup warm water",
     "3 cups flour",
     "½ cup butter",
     "Parmesan cheese (for topping)"
@@ -214,7 +214,7 @@ const recipe = [
     "½ Tbsp yeast",
     "1 Tbsp sugar",
     "½ tsp salt",
-    "¼ cup warm water",
+    "¾ cup warm water",
     "1½ cups flour",
     "¼ cup butter",
     "Parmesan cheese (for topping)"
@@ -223,7 +223,7 @@ const recipe = [
     "2 Tbsp yeast",
     "4 Tbsp sugar",
     "2 tsp salt",
-    "1 cup warm water",
+    "3 cup warm water",
     "6 cups flour",
     "1 cup butter",
     "Parmesan cheese (for topping)"
