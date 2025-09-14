@@ -6,8 +6,8 @@ const recipe = [
     "image": "dessert.png",
     "imgName": "cookies",
     "ingredient": [
-      "2/3 cup shortening",
-      "2/3 cup butter",
+      "⅔ cup shortening",
+      "⅔ cup butter",
       "2 eggs",
       "1 cup brown sugar",
       "1 cup white sugar",
@@ -18,20 +18,20 @@ const recipe = [
       "1 bag of chocolate chips"
     ],
     "ingredientHalf": [
-      "1/3 cup shortening",
-      "1/3 cup butter",
+      "⅓ cup shortening",
+      "⅓ cup butter",
       "1 egg",
-      "1/2 cup brown sugar",
-      "1/2 cup white sugar",
+      "½ cup brown sugar",
+      "½ cup white sugar",
       "1 tsp vanilla extract",
-      "1/2 tsp salt",
-      "1/2 tsp baking soda",
-      "1.5 cups flour",
-      "1/2 bag of chocolate chips"
+      "½ tsp salt",
+      "½ tsp baking soda",
+      "1 ½ cups flour",
+      "½ bag of chocolate chips"
     ],
     "ingredientDouble": [
-      "1 1/3 cups shortening",
-      "1 1/3 cups butter",
+      "1 ⅓ cups shortening",
+      "1 ⅓ cups butter",
       "4 eggs",
       "2 cups brown sugar",
       "2 cups white sugar",
