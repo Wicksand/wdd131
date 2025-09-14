@@ -89,11 +89,11 @@ const recipe = [
     "2 cups butter (softened)",
     "1 1/2 cups sugar",
     "2 eggs",
-    "4 Tbsp lemon peel (divided)",
+    "4 Tbsp zest (divided)",
     "2 tsp vanilla",
     "2 cups powdered sugar (for glaze)",
     "8–10 tsp lemon juice (for glaze)",
-    "Remaining lemon peel (for glaze)"
+    "Remaining lemon zest (for glaze)"
   ],
   "name": "Jessica’s Lemon Shortbread Cookies",
   "prepTime": "30 Min",
@@ -101,7 +101,7 @@ const recipe = [
     "Preheat oven to 375°F.",
     "In a bowl, combine flour, baking powder, and salt. Set aside.",
     "In a large bowl, beat softened butter and sugar until light and fluffy.",
-    "Beat in the egg, 1 Tbsp lemon peel, and vanilla until well blended.",
+    "Beat in the egg, half of the lemon zest, and vanilla until well blended.",
     "Gradually beat in the flour mixture on low speed until fully incorporated.",
     "Scoop dough and form into cookies; place on a baking sheet.",
     "Bake for 12–14 minutes, or until edges are lightly golden.",
