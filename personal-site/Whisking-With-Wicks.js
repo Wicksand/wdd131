@@ -63,11 +63,11 @@ const recipe = [
     "1 cup butter (softened)",
     "3/4 cup sugar",
     "1 egg",
-    "2 Tbsp lemon peel (divided)",
+    "2 Tbsp lemon zest (divided)",
     "1 tsp vanilla",
     "1 cup powdered sugar (for glaze)",
     "4–5 tsp lemon juice (for glaze)",
-    "Remaining lemon peel (for glaze)"
+    "Remaining lemon zest (for glaze)"
   ],
   "ingredientHalf": [
     "1 1/8 cups flour",
@@ -76,11 +76,11 @@ const recipe = [
     "1/2 cup butter (softened)",
     "3/8 cup sugar",
     "1/2 egg",
-    "1 Tbsp lemon peel (divided)",
+    "1 Tbsp lemon zest (divided)",
     "1/2 tsp vanilla",
     "1/2 cup powdered sugar (for glaze)",
     "2–2.5 tsp lemon juice (for glaze)",
-    "Remaining lemon peel (for glaze)"
+    "Remaining lemon zest (for glaze)"
   ],
   "ingredientDouble": [
     "4 1/2 cups flour",
@@ -105,7 +105,7 @@ const recipe = [
     "Gradually beat in the flour mixture on low speed until fully incorporated.",
     "Scoop dough and form into cookies; place on a baking sheet.",
     "Bake for 12–14 minutes, or until edges are lightly golden.",
-    "To make the glaze, mix powdered sugar with 4–5 tsp lemon juice and the remaining lemon peel.",
+    "To make the glaze, mix powdered sugar with 4–5 tsp lemon juice and the remaining lemon zest.",
     "Drizzle glaze over cooled cookies before serving."
   ]
 },
